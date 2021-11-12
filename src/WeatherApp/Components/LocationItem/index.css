@@ -1,0 +1,77 @@
+.location-item {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem 1rem 2rem 1rem;
+  background-color: #fff;
+}
+
+.location-item .material-icons {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.location-item div:nth-child(1) p {
+  color: rgb(74, 148, 228);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.location-item div:nth-child(1) {
+  color: rgb(74, 148, 228);
+}
+
+.location-item div:nth-child(2) img {
+  width: 50px;
+  height: auto;
+}
+
+.location-item div:nth-child(2) > div {
+  display: flex;
+  align-items: flex-start;
+}
+
+.location-item div:nth-child(2) > div span {
+  font-size: 2rem;
+  color: #000;
+}
+
+.location-item div:nth-child(2) > div sup {
+  font-size: small;
+}
+
+.location-item-wrapper {
+  height: 90px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.location-item-wrapper.remove {
+  animation: remove 0.5s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes remove {
+  0% {
+    margin-bottom: 1rem;
+    height: 90px;
+    opacity: 1;
+  }
+  40% {
+    margin-bottom: 0.6rem;
+    height: 90px;
+    opacity: 0;
+  }
+  100% {
+    margin-bottom: 0rem;
+    opacity: 0;
+    height: 0;
+  }
+}

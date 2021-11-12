@@ -1,0 +1,49 @@
+.work-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.work-item span {
+  cursor: pointer;
+}
+
+.work-item p {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.work-item-wrapper.complete {
+  opacity: 0.5;
+}
+.work-item-wrapper.complete p {
+  text-decoration: line-through;
+}
+
+.work-item-wrapper {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 80px;
+  border-bottom: 1px solid gray;
+}
+
+.deleting {
+  animation: delete 0.75s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes delete {
+  10% {
+    opacity: 1;
+    background-color: rgba(255, 51, 51, 0.5);
+  }
+  40% {
+    opacity: 0;
+    background-color: transparent;
+  }
+  100% {
+    opacity: 0;
+    height: 0px;
+    background-color: transparent;
+  }
+}

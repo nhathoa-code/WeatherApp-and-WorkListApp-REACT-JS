@@ -1,0 +1,11 @@
+#WeatherApp {
+  width: 30vw;
+  height: 85vh;
+  position: relative;
+  background-color: rgb(248, 249, 251);
+  margin: 1.5rem auto;
+  border: 0px solid transparent;
+  padding: 1rem 1.5rem;
+  overflow: auto;
+  box-shadow: 0 0 10px #888888;
+}

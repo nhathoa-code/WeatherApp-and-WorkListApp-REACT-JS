@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+  text-decoration: none;
+  margin-left: 1rem;
+  color: #000;
+}
+body {
+  background-color: #fff;
+}
+
+#app-container {
+  width: 30vw;
+  height: 80vh;
+  margin: 0 auto;
+  background-color: rgb(230, 231, 235);
+  padding: 0.5rem 1rem 0.85rem 1rem;
+}
+.material-icons {
+  color: rgb(155, 157, 172);
+}

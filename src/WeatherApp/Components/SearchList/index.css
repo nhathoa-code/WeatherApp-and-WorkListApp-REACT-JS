@@ -1,0 +1,25 @@
+.search-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.search-item div:nth-child(1) p {
+  color: rgb(93, 147, 189);
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+
+.search-item div:nth-child(2) > span {
+  font-size: 2rem;
+  color: #000;
+}
+
+.search-item div:nth-child(2) sup {
+  font-size: 1rem;
+}

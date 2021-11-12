@@ -1,0 +1,78 @@
+#app-container form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  border-bottom: 2px solid grey;
+}
+
+#app-container form input {
+  flex: 1;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem 0.85rem 1rem;
+  font-size: 1.5rem;
+}
+
+#app-container form input:focus {
+  outline: none;
+}
+
+#app-container form::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: -4%;
+  background-color: aquamarine;
+  transition: 0.5s ease;
+}
+#app-container form.focus::after {
+  width: 100%;
+}
+#app-container form.blur::after {
+  width: 0%;
+}
+
+#app-container form .material-icons {
+  font-size: 40px;
+}
+
+#app-container form.error {
+  animation: error 0.5s ease;
+}
+
+@keyframes error {
+  10% {
+    transform: translateX(2%);
+  }
+  20% {
+    transform: translateX(-2%);
+  }
+  30% {
+    transform: translateX(2%);
+  }
+  40% {
+    transform: translateX(-2%);
+  }
+  50% {
+    transform: translateX(2%);
+  }
+  60% {
+    transform: translateX(-2%);
+  }
+  70% {
+    transform: translateX(2%);
+  }
+  80% {
+    transform: translateX(-2%);
+  }
+  90% {
+    transform: translateX(2%);
+  }
+  100% {
+    transform: translateX(-2%);
+  }
+}

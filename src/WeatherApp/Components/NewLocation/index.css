@@ -1,0 +1,17 @@
+#new-location {
+  cursor: pointer;
+  width: 30%;
+  padding: 1rem;
+  background-color: #fff;
+  text-align: center;
+  margin: 4rem auto;
+}
+
+#new-location img {
+  width: 80px;
+  height: auto;
+}
+
+#new-location div {
+  font-size: small;
+}
